@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function advanceArray(nums) {
+        var data = (num) => {
+            if(num%2==0)
+                return num*2;
+            else if(num%2!=0)
+                return num*3;
+        }
+        var modified_Array = nums.map(data);
+        return modified_Array;
+        
+    }
+    
+    var nums=[1,2,3,4,5];
+    document.write('input array : [1,2,3,4,5]\n');
+    document.write('output array : '+advanceArray(nums));
+    
+    
+    </script>
+</body>
+</html>
